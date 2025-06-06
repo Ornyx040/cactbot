@@ -461,6 +461,7 @@ const triggerSet: TriggerSet<Data> = {
         en: 'Classical Concepts: Pairs Order (Left->Right)',
         de: 'Elementarschöpfung: Ordnen nach Paaren (Links->Rechts)',
         fr: 'Concepts élémentaires : Ordre des paires (Gauche->Droite)',
+        ja: '古典概念: ペアの順番 (左→右)',
         cn: '经典概念 索尼顺序（左->右）',
         ko: 'Classical Concepts: 도형 순서 (왼 -> 오)',
       },
@@ -489,6 +490,14 @@ const triggerSet: TriggerSet<Data> = {
           '○ΔX□ (Arc-en-ciel)': 'ctxs',
           'Δ○X□ (TOXS)': 'tcxs',
           'Afficher uniquement la forme et le débuff': 'shapeAndDebuff',
+        },
+        ja: {
+          'X□○Δ (BPOG)': 'xsct',
+          '○XΔ□ (ライン)': 'cxts',
+          '○Δ□X (ロケット)': 'ctsx',
+          '○ΔX□ (レインボー)': 'ctxs',
+          'Δ○X□ (TOXS)': 'tcxs',
+          '形とデバフのみコール': 'shapeAndDebuff',
         },
         cn: {
           'X□○Δ (BPOG)': 'xsct',
@@ -522,6 +531,10 @@ const triggerSet: TriggerSet<Data> = {
           `Afficher la position finale uniquement dans l\'ordre des paires choisies, sans inversion.
             Par exemple, pour le BPOG, le X bleu (croix) sera loin à l\'ouest.
             <a href="https://overlayplugin.github.io/cactbot/resources/images/06ew_raid_p12s_classic2_noflip.webp" target="_blank">Visual</a>`,
+        ja:
+          `選択したペア順で反転せず、最終位置のみを即座にコールします。
+            例としてBPOGでは青Xが西端になります。
+            <a href="https://overlayplugin.github.io/cactbot/resources/images/06ew_raid_p12s_classic2_noflip.webp" target="_blank">図</a>`,
         cn: `直接报自己图案的最终位置，不报变换前的。例如，对于 BPOG 打法，蓝 X 会直接报第一列（西面最远）。
             <a href="https://overlayplugin.github.io/cactbot/resources/images/06ew_raid_p12s_classic2_noflip.webp" target="_blank">Visual</a>`,
         ko: `선택한 도형 순서에 따른 최종 위치만 알립니다. 예시에서 파보빨초를 기준으로 파랑 X는 1열이 됩니다.
@@ -531,6 +544,7 @@ const triggerSet: TriggerSet<Data> = {
         en: 'Classical Concepts 2: Actual only & no inversion',
         de: 'Classical Concepts 2: Nur tatsächlich & keine Umkehrung',
         fr: 'Classical Concepts 2 : Actuel uniquement & pas d\'inversion',
+        ja: '古典概念2: 実際位置のみ・反転なし',
         cn: '经典概念2: 直接报最终位置 (不报变换)',
         ko: '원소 이데아 2: 반전 없이 실제 위치만 알림',
       },
@@ -543,6 +557,7 @@ const triggerSet: TriggerSet<Data> = {
         en: 'Pangenesis: First Towers',
         de: 'Pangenesis: Erste Türme',
         fr: 'Pangenesis: Première tour',
+        ja: 'パンゲネシス: 最初の塔',
         cn: '黑白塔',
         ko: '범생설: 첫번째 기둥',
       },
@@ -560,6 +575,11 @@ const triggerSet: TriggerSet<Data> = {
         },
         fr: {
           'Afficher uniquement les swaps nécessaires': 'agnostic',
+          '0+2 (HRT)': 'not',
+          '1+2 (Yuki/Rinon)': 'one',
+        },
+        ja: {
+          '必要な色替えのみ通知': 'agnostic',
           '0+2 (HRT)': 'not',
           '1+2 (Yuki/Rinon)': 'one',
         },
@@ -2144,7 +2164,7 @@ const triggerSet: TriggerSet<Data> = {
             en: 'Bait (${delay})',
             de: 'Laser Ködern (${delay})',
             fr: 'Bait (${delay})',
-            ja: 'レーザー誘導 (${delay})', // FIXME
+            ja: 'レーザー誘導 (${delay})',
             cn: '引导激光 (${delay})',
             ko: '레이저 유도 (${delay})',
           },
@@ -2152,7 +2172,7 @@ const triggerSet: TriggerSet<Data> = {
             en: '(5 and 7 ${delay})',
             de: '(5 und 7 ködern ${delay})',
             fr: '(5 et 7 ${delay})',
-            ja: '(5と7誘導 ${delay})', // FIXME
+            ja: '(5と7誘導 ${delay})',
             cn: '(5 和 7 引导 ${delay})',
             ko: '(5, 7 레이저 ${delay})',
           },
@@ -2190,7 +2210,7 @@ const triggerSet: TriggerSet<Data> = {
             en: 'Bait (${delay})',
             de: 'Laser Ködern (${delay})',
             fr: 'Bait (${delay})',
-            ja: 'レーザー誘導 (${delay})', // FIXME
+            ja: 'レーザー誘導 (${delay})',
             cn: '引导激光 (${delay})',
             ko: '레이저 유도 (${delay})',
           },
@@ -2198,7 +2218,7 @@ const triggerSet: TriggerSet<Data> = {
             en: '(6 and 8 ${delay})',
             de: '(6 und 8 ködern ${delay})',
             fr: '(6 et 8 ${delay})',
-            ja: '(6と8誘導 ${delay})', // FIXME
+            ja: '(6と8誘導 ${delay})',
             cn: '(6 和 8 引导 ${delay})',
             ko: '(6, 8 레이저 ${delay})',
           },
@@ -2206,7 +2226,7 @@ const triggerSet: TriggerSet<Data> = {
             en: '(1 and 3 ${delay})',
             de: '(1 und 3 ködern ${delay})',
             fr: '(1 et 3 ${delay})',
-            ja: '(1と3誘導 ${delay})', // FIXME
+            ja: '(1と3誘導 ${delay})',
             cn: '(1 和 3 引导 ${delay})',
             ko: '(1, 3 레이저 ${delay})',
           },
@@ -2214,7 +2234,7 @@ const triggerSet: TriggerSet<Data> = {
             en: '(2 and 4 ${delay})',
             de: '(2 und 6 ködern ${delay})',
             fr: '(2 et 4 ${delay})',
-            ja: '(2と4誘導 ${delay})', // FIXME
+            ja: '(2と4誘導 ${delay})',
             cn: '(2 和 4 引导 ${delay})',
             ko: '(2, 4 레이저 ${delay})',
           },
@@ -4147,7 +4167,7 @@ const triggerSet: TriggerSet<Data> = {
             en: 'Initial Fire (w/ ${partner})',
             de: 'Initiales Feuer (mit ${partner})',
             fr: 'Feu initial (avec ${partner})',
-            ja: '自分に初炎 (${partner})', // FIXME
+            ja: '自分に初炎 (${partner})',
             cn: '火点名 (和 ${partner})',
             ko: '첫 불 대상자 (+ ${partner})',
           },
@@ -4215,7 +4235,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Stack with Fire',
           de: 'Mit Feuer sammeln',
           fr: 'Package avec le Feu',
-          ja: '無職！炎とあたまわり', // FIXME
+          ja: '炎と頭割り',
           cn: '与火分摊',
           ko: '불 쉐어',
         },
@@ -4260,7 +4280,7 @@ const triggerSet: TriggerSet<Data> = {
             en: 'Initial Wind',
             de: 'Initial Wind',
             fr: 'Vent inital',
-            ja: '自分に初風', // FIXME
+            ja: '自分に初風',
             cn: '风点名',
             ko: '첫 바람 대상자',
           },
@@ -4312,7 +4332,7 @@ const triggerSet: TriggerSet<Data> = {
             en: 'Fire Marker',
             de: 'Feuer Markierung',
             fr: 'Marqueur de feu',
-            ja: '自分に初炎!', // FIXME
+            ja: '自分に初炎!',
             cn: '传火点名',
             ko: '불 대상자',
           },
@@ -4607,7 +4627,7 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
+      'missingTranslations': false,
       'replaceSync': {
         '(?<! )Athena': 'アテナ',
         'Anthropos': 'アンスロポス',
