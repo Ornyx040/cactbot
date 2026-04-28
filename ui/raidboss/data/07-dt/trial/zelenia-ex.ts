@@ -241,6 +241,7 @@ const triggerSet: TriggerSet<Data> = {
       name: {
         en: 'Escelons Fall Strategy',
         de: 'Aufsteigendes Kreuz Strategy',
+        ja: 'クライムクロス処理',
         cn: '凌空错策略',
         ko: '클라임 크로스 전략',
         tc: '淩空錯策略',
@@ -264,6 +265,12 @@ const triggerSet: TriggerSet<Data> = {
             DPS Intérieur - Les DPS commencent à l'intérieur, les supports commencent à l'extérieur.
             Support en 1er - Les supports baitent en premier.
             DPS en 1er - Les DPS baitent en premier.`,
+        ja: `クライムクロス1回目と3回目の処理法。
+
+            なし - 最初の誘導のみ案内。
+            DPS内側 - DPSは常に内側から、タンクヒラは常に外側から開始。
+            タンクヒラ先 - タンクヒラが最初に誘導。
+            DPS先 - DPSが最初に誘導。`,
         cn: `凌空错1和3处理策略。
 
             无 - 仅播报第一次引导。
@@ -302,6 +309,12 @@ const triggerSet: TriggerSet<Data> = {
           'DPS Intérieur': 'dpsIn',
           'Support en 1er': 'supportFirst',
           'DPS en 1er': 'dpsFirst',
+        },
+        ja: {
+          'なし': 'none',
+          'DPS内側': 'dpsIn',
+          'タンクヒラ先': 'supportFirst',
+          'DPS先': 'dpsFirst',
         },
         cn: {
           '无': 'none',
@@ -435,6 +448,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Near bait first',
           de: 'Nah ködert zuerst',
           fr: 'Proche déposent en premier',
+          ja: '近くから誘導',
           cn: '先靠近引导',
           ko: '가까이 유도 먼저',
           tc: '先靠近引導',
@@ -443,6 +457,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Far bait first',
           de: 'Fern ködert zuerst',
           fr: 'Loin déposent en premier',
+          ja: '遠くから誘導',
           cn: '先远离引导',
           ko: '멀리 유도 먼저',
           tc: '先遠離引導',
@@ -451,6 +466,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Start out',
           de: 'Starte außen',
           fr: 'Commencez à l\'extérieur',
+          ja: '外から開始',
           cn: '圈外开始',
           ko: '바깥 시작',
           tc: '圈外開始',
@@ -459,6 +475,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Start in',
           de: 'Starte innen',
           fr: 'Commencez à l\'intérieur',
+          ja: '内から開始',
           cn: '圈内开始',
           ko: '안 시작',
           tc: '圈內開始',
@@ -467,6 +484,7 @@ const triggerSet: TriggerSet<Data> = {
           en: '${first}, Swap after first+third',
           de: '${first}, Wechseln nach erstem+dritten',
           fr: '${first}, swap après le premier et troisième',
+          ja: '${first}, 1回目・3回目後に交代',
           cn: '${first}, 第1次和第3次后交换',
           ko: '${first}, 1번째와 3번째 후 교대',
           tc: '${first}, 第1次和第3次後交換',
@@ -475,6 +493,7 @@ const triggerSet: TriggerSet<Data> = {
           en: '${first}, Swap after second',
           de: '${first}, Wechseln nach dem zweiten',
           fr: '${first}, swap après le second',
+          ja: '${first}, 2回目後に交代',
           cn: '${first}, 第2次后交换',
           ko: '${first}, 2번째 후 교대',
           tc: '${first}, 第2次後交換',
@@ -785,7 +804,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Roses north, spreads south',
           de: 'Rosen Norden, Verteilen Süden',
           fr: 'Roses au Nord, dispersion au Sud',
-          ja: 'バラ北, さんかい南',
+          ja: 'バラ北, 散開南',
           cn: '蔷薇上, 分散下',
           ko: '장미 북쪽, 산개 남쪽',
           tc: '薔薇上, 分散下',
@@ -794,7 +813,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Roses south, spreads north',
           de: 'Rosen Süden, Verteilen Norden',
           fr: 'Roses au Sud, dispersion au Nord',
-          ja: 'バラ南, さんかい北',
+          ja: 'バラ南, 散開北',
           cn: '蔷薇下, 分散上',
           ko: '장미 남쪽, 산개 북쪽',
           tc: '薔薇下, 分散上',
@@ -832,7 +851,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Rose Marker on YOU, spread ${northSouth}',
           de: 'Rosen-Marker auf DIR, verteile ${northSouth}',
           fr: 'Marqueur de Rose sur VOUS, dispersion ${northSouth}',
-          ja: 'バラ対象, ${northSouth} さんかい',
+          ja: 'バラ対象, ${northSouth} 散開',
           cn: '蔷薇点名, ${northSouth} 分散',
           ko: '장미징 대상자, ${northSouth}에서 산개',
           tc: '薔薇點名, ${northSouth} 分散',
@@ -841,7 +860,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Spread Marker on YOU, spread ${northSouth}',
           de: 'Verteilen-Marker auf DIR, verteile ${northSouth}',
           fr: 'Marqueur de dispersion sur VOUS, dispersion ${northSouth}',
-          ja: 'さんかい対象, ${northSouth} さんかい',
+          ja: '散開対象, ${northSouth} 散開',
           cn: '分散点名, ${northSouth} 分散',
           ko: '산개징 대상자, ${northSouth}에서 산개',
           tc: '分散點名, ${northSouth} 分散',
@@ -1135,13 +1154,19 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Briar Thorn': 'クライムハザード',
         'Zelenia(?!\')': 'ゼレニア',
         'Zelenia\'s Shade': 'ゼレニアの幻影',
       },
       'replaceText': {
+        '\\(cast\\)': '(詠唱)',
+        '\\(chakrams\\)': '(チャクラム)',
+        '\\(enrage\\?\\)': '(エンレイジ?)',
+        '\\(enrage\\)': '(エンレイジ)',
+        '\\(markers\\)': '(マーカー)',
+        '\\(resolves\\)': '(発動)',
+        '\\(snapshot\\)': '(スナップショット)',
         'Alexandrian Banish II(?!I)': 'キングダム・バニシュラ',
         'Alexandrian Banish III': 'キングダム・バニシュガ',
         'Alexandrian Holy': 'キングダム・ホーリー',
