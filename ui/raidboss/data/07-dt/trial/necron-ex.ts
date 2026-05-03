@@ -840,7 +840,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Azure Aether': '青の魂塊',
         'Beckoning Hands': '死に誘う手',
@@ -848,6 +847,14 @@ const triggerSet: TriggerSet<Data> = {
         'Necron': '永遠の闇',
       },
       'replaceText': {
+        '\\(cast\\)': '(詠唱)',
+        '\\(damage\\)': '(ダメージ)',
+        '\\(intercards\\)': '(斜め)',
+        '\\(lines?\\)': '(直線)',
+        '\\(puddles?\\)': '(設置)',
+        '\\(spread\\)': '(散開)',
+        '\\(tower\\)': '(塔)',
+        'Add Spawn': '雑魚出現',
         'Aetherblight': '青の波動',
         'Blue Shockwave': '青の衝撃',
         'Chilling Fingers': 'まとわりつく',
