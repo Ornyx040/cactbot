@@ -188,7 +188,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Armored Weapon': 'アームドウェポン',
         'Blade Of The Griffin': 'グリフィンブレード',
@@ -201,6 +200,7 @@ const triggerSet: TriggerSet<Data> = {
         'Via Praetoria': 'ヴィア・プラエトリア',
       },
       'replaceText': {
+        '--teleport': '--ワープ--',
         'Assault Cannon': 'アサルトカノン',
         'Beak Of The Griffin': 'ビーク・オブ・グリフィン',
         'Big Boot': 'ビックブート',
