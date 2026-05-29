@@ -941,7 +941,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Amalj\'aa Artillery Carriage': 'アマルジャ式野砲',
         'Antique Boulder': '岩石',
@@ -968,6 +967,12 @@ const triggerSet: TriggerSet<Data> = {
         'Thorne Knight': 'ソーン・マジックナイト',
       },
       'replaceText': {
+        '--draw in--': '--引き寄せ--',
+        '\\(in\\)': '(内)',
+        '\\(out\\)': '(外)',
+        '\\(far\\)': '(遠)',
+        '\\(near\\)': '(近)',
+        '\\(mid\\)': '(中)',
         'Amalj\'aa Artillery': 'アマルジャ式野砲',
         'Biting Wind': '烈風',
         'Blaze of Glory': '十字聖火',
