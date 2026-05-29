@@ -892,13 +892,13 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Cloud of Darkness': '暗闇の雲',
         'Cloudlet of Darkness': '暗闇の片乱雲',
         'Stygian Shadow': '闇より出づる者',
       },
       'replaceText': {
+        '--adds untargetable--': '--雑魚ターゲット不可--',
         'Active-pivot Particle Beam': '旋回式波動砲',
         '(?<!En)Aero IV': 'エアロジャ',
         'Blade of Darkness': '闇の刃',

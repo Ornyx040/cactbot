@@ -436,7 +436,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Amalgam': 'アマルガム',
         'Antivirus X': '抗体プログラムX',
