@@ -151,7 +151,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Hexadrone Bit': 'ヘキサローラー・ビット',
         'Hypertuned Grynewaht': '強化グリーンワート',
@@ -166,6 +165,7 @@ const triggerSet: TriggerSet<Data> = {
       },
       'replaceText': {
         '2-Tonze Magitek Missile': '大型魔導ミサイル',
+        'Bits Activate': 'ビット起動',
         'Cermet Pile': 'サーメットパイル',
         'Chainsaw': 'チェーンソー',
         'Circle Of Death': 'サークル・オブ・デス',
@@ -177,6 +177,7 @@ const triggerSet: TriggerSet<Data> = {
         'Gunsaw': 'ガンチェーンソー',
         'Magitek Missiles': '魔導ミサイル',
         'Magitek Ray': '魔導レーザー',
+        'Rearguard Mines': '地雷設置',
         'Thermobaric Charge': '気化爆弾',
       },
     },

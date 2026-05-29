@@ -500,7 +500,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Aqua Sphere': 'アクアスフィア',
         'Archaeodemon': 'アルケオデーモン',
@@ -525,6 +524,9 @@ const triggerSet: TriggerSet<Data> = {
         'The heavens tremble in my wake': '我が戦車の車輪は、天をも駆ける！\\s+ゆくぞ……！',
       },
       'replaceText': {
+        '--Shade--': '--幻影--',
+        '--Shard--': '--結晶--',
+        '--enrage--': '--時間切れ--',
         '--invulnerable--': '--インヴィンシブル--',
         '--lock out--': '--ロックオン--',
         'Aqua Sphere Adds': 'アクアスフィア',
