@@ -273,7 +273,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Amhuluk': 'アムルック',
         'Lunar Bahamut': 'ルナバハムート',
@@ -283,6 +282,9 @@ const triggerSet: TriggerSet<Data> = {
         'The Gathering Ring': 'ゾレマク祭場',
       },
       'replaceText': {
+        '\\(circles\\)': '(円形AoE)',
+        '\\(explosions\\)': '(爆発)',
+        '--Levin orbs--': '--雷球フェーズ--',
         'Akh Morn': 'アク・モーン',
         'Big Burst': '大爆発',
         'Critical Rip': 'クリティカルリップ',
