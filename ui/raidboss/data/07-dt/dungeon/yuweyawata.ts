@@ -32,6 +32,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Away from falling pillar',
           de: 'Weg von der fallenden Säule',
           fr: 'Éloignez-vous du pilier',
+          ja: '倒れる柱から離れる',
           cn: '远离柱子落点',
           ko: '기둥 추락지점에서 멀리 떨어지기',
           tc: '遠離柱子落點',
@@ -161,6 +162,7 @@ const triggerSet: TriggerSet<Data> = {
           en: 'Away from boss',
           de: 'Weg vom Boss',
           fr: 'Éloignez-vous du boss',
+          ja: 'ボスから離れる',
           cn: '远离 BOSS',
           ko: '보스에게서 멀어지기',
           tc: '遠離 BOSS',
@@ -283,7 +285,6 @@ const triggerSet: TriggerSet<Data> = {
     },
     {
       'locale': 'ja',
-      'missingTranslations': true,
       'replaceSync': {
         'Lindblum Zaghnal': 'リンドブルム・ザグナル',
         'Lunipyati': 'ルニピャティ',
@@ -291,6 +292,13 @@ const triggerSet: TriggerSet<Data> = {
         'Preserved Soul': '所員の亡魂',
       },
       'replaceText': {
+        '\\(arcs\\)': '(扇形AoE)',
+        '\\(big\\)': '(大)',
+        '\\(multiple\\)': '(複数)',
+        '\\(spiral\\)': '(螺旋)',
+        '--adds 1 targetable--': '--雑魚1体ターゲット可能--',
+        '--adds 2 targetable--': '--雑魚2体ターゲット可能--',
+        '--adds 3 targetable--': '--雑魚3体ターゲット可能--',
         'Beastly Roar': 'ビーストロア',
         'Bloodburst': 'ブラッドバースト',
         'Boulder Dance': 'ダンシングロック',
